@@ -10,10 +10,10 @@ Check the original mygrades extension here: https://github.com/Sam506944/my-grad
 
 ## Examples
 ### Hidden
-![Alt text](assets/image-hidden.png)
+<img src="assets/image-hidden.png" width="700">
 
 ### Shown
-![Alt text](assets/image-shown.png)
+<img src="assets/image-shown.png" width="700">
 
 ### Hover
-![Alt text](assets/image-hover.png)
+<img src="assets/image-hover.png" width="700">
