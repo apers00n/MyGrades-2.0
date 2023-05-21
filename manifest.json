@@ -1,0 +1,37 @@
+{
+  "name": "MyGrades 2.0",
+  "version": "1.0.0",
+  "description": "Extension for mygann grades. Works with mygann+. Go here to read more: https://github.com/apers00n/MyGrades-2.0",
+  "manifest_version": 3,
+  "permissions": [
+    "https://gannacademy.myschoolapp.com/*"
+  ],
+  "icons": {
+    "128": "appicon.png",
+    "48": "appicon.png",
+    "32": "appicon.png",
+    "16": "appicon.png"
+  },
+  "page_action": {
+
+    "default_icon": {
+
+      "128": "appicon.png",
+      "48": "appicon.png",
+      "32": "appicon.png",
+      "16": "appicon.png"
+    }
+  },
+  "content_scripts": [{
+
+    "matches": ["https://gannacademy.myschoolapp.com/*"],
+    "css": ["background.css"],
+    "js": ["background.js"]
+
+    
+
+
+  }]
+  
+  
+}
