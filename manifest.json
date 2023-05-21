@@ -13,25 +13,24 @@
     "16": "appicon.png"
   },
   "page_action": {
-
     "default_icon": {
-
       "128": "appicon.png",
       "48": "appicon.png",
       "32": "appicon.png",
       "16": "appicon.png"
     }
   },
-  "content_scripts": [{
-
-    "matches": ["https://gannacademy.myschoolapp.com/*"],
-    "css": ["background.css"],
-    "js": ["background.js"]
-
-    
-
-
-  }]
-  
-  
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gannacademy.myschoolapp.com/*"
+      ],
+      "css": [
+        "background.css"
+      ],
+      "js": [
+        "background.js"
+      ]
+    }
+  ]
 }

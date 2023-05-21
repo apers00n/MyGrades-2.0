@@ -9,11 +9,15 @@ Extension that works with mygann+ to show grades on mygann. There are two ways t
 Check the original mygrades extension here: https://github.com/Sam506944/my-grades-final.
 
 ## Examples
+
 ### Hidden
+
 <img src="assets/image-hidden.png" width="700">
 
 ### Shown
+
 <img src="assets/image-shown.png" width="700">
 
 ### Hover
+
 <img src="assets/image-hover.png" width="700">
