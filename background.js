@@ -84,6 +84,7 @@ async function getGradedClasses(includeMissingAssignments = true, dateStart = 'f
     let Class = classes[assignment.sectionName];
     if (!Class && ((!gradelessAssignments[index].missing_ind && assignment.pointsEarned) || gradelessAssignments[index].missing_ind)) {
       Class = [0, 0, 0, undefined]; //Points earned, max points, percent, letter, list of all assignments in that class
+    } else if (((!gradelessAssignments[index].missing_ind && assignment.pointsEarned) || gradelessAssignments[index].missing_ind)) {
     } else { continue; }
 
     Class[0] += assignment.pointsEarned;
@@ -117,8 +118,7 @@ async function getGradedClasses(includeMissingAssignments = true, dateStart = 'f
       Class[3] = "F";
     }
     classes[assignment.sectionName] = Class;
-  }
-  for (let [key, value] of Object.entries(classes)) {
+  } for (let [key, value] of Object.entries(classes)) {
     var Class = value;
 
     Class[2] = (Class[2].toFixed(2)) + "%";
@@ -154,6 +154,8 @@ function insertGrades() {
           points.innerHTML = '<h5 class="showGrade" style = "line-height: .5;">' + value[0] + '</h5>';
           letterGrade.appendChild(percent);
           letterGrade.appendChild(points);
+
+
           parent.childNodes[7].title = value[2] + "\n" + value[1] + "\n" + value[0];
 
         }
