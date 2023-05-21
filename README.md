@@ -8,4 +8,12 @@ Extension that works with mygann+ to show grades on mygann. There are two ways t
 
 Check the original mygrades extension here: https://github.com/Sam506944/my-grades-final.
 
-Examples
+## Examples
+### Hidden
+![Alt text](assets/image-hidden.png)
+
+### Shown
+![Alt text](assets/image-shown.png)
+
+### Hover
+![Alt text](assets/image-hover.png)
